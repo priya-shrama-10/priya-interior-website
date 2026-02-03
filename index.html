@@ -2,7 +2,11 @@
 <html lang="en">
 
 <head>
- 
+ <!-- Lightbox CSS -->
+<link
+  href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css"
+  rel="stylesheet">
+
 
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <meta charset="UTF-8">
@@ -13,6 +17,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
 
     <style>
+        .gallery a {
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.gallery img {
+    transition: transform 0.4s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.08);
+}
+
+ 
         /* BIG GOLDEN HEADING */
         header h1 {
             font-family: 'Cinzel', serif;
@@ -265,31 +283,75 @@
 </div>
 </section>
 
+
 <!-- GALLERY -->
 <section id="gallery">
-    <h2>Our Work</h2>
-    <div class="gallery" id="galleryBox">
-        <!-- KEEP YOUR IMAGE PATHS HERE -->
-          <img src="C:\Users\Priya Sharma\Downloads\img.2.jpg">
-            <img src="C:\Users\Priya Sharma\Downloads\img.1.jpg"data-aos="zoom-in">
-        <img src="C:\Users\Priya Sharma\Downloads\imgage.jpg"data-aos="zoom-in">
-        <img src="C:\Users\Priya Sharma\Downloads\image2.jpg"data-aos="zoom-in">
-         <img src="C:\Users\Priya Sharma\Downloads\image3.jpg"data-aos="zoom-in">
-          <img src="C:\Users\Priya Sharma\Downloads\image4.jpg"data-aos="zoom-in">
-           <img src="C:\Users\Priya Sharma\Downloads\images5.jpg"data-aos="zoom-in">
-            <img src="C:\Users\Priya Sharma\Downloads\image6.jpg"data-aos="zoom-in">
-             <img src="C:\Users\Priya Sharma\Downloads\image7.jpg"data-aos="zoom-in">
-              <img src="C:\Users\Priya Sharma\Downloads\image8.jpg"data-aos="zoom-in">
-               <img src="C:\Users\Priya Sharma\Downloads\image9.jpg"data-aos="zoom-in">
-                <img src="C:\Users\Priya Sharma\Downloads\image10.jpg"data-aos="zoom-in">
-                 <img src="C:\Users\Priya Sharma\Downloads\image11.jpg"data-aos="zoom-in">
-                  <img src="C:\Users\Priya Sharma\Downloads\image12.jpg"data-aos="zoom-in"> 
-                  <img src="C:\Users\Priya Sharma\Downloads\image13.jpg"data-aos="zoom-in">
- <img src="C:\Users\Priya Sharma\Downloads\image14.jpg"data-aos="zoom-in">
-         <img src="C:\Users\Priya Sharma\Downloads\image15.jpg"data-aos="zoom-in">
-          <img src="C:\Users\Priya Sharma\Downloads\image16.jpg"data-aos="zoom-in">
-           <img src="C:\Users\Priya Sharma\Downloads\image17.jpg"data-aos="zoom-in">
-            <img src="C:\Users\Priya Sharma\Downloads\image2.jpg"data-aos="zoom-in">
+  <h2>Our Work</h2>
+
+  <div class="gallery" id="galleryBox">
+    <a href="images/image2.jpg" data-lightbox="gallery">
+    <img src="images/image2.jpg" data-aos="zoom-in" loading="lazy">
+    </a>
+    <a href="images/image3.jpg" data-lightbox="gallery">
+    <img src="images/image3.jpg"data-aos="zoom-in" loading="lazy">
+    </a>
+    <a href="images/image4.jpg" data-lightbox="gallery">
+    <img src="images/image4.jpg" data-aos="zoom-in" loading="lazy">
+    </a>
+    <a href="images/images5.jpg" data-lightbox="gallery">
+    <img src="images/images5.jpg" data-aos="zoom-in" loading="lazy">
+    </a>
+    <a href="images/image6.jpg" data-lightbox="gallery">
+      <img src="images/image6.jpg" data-aos="zoom-in" loading="lazy">
+    </a>
+    <a href="images/image7.jpg" data-lightbox="gallery">
+    <img src="images/image7.jpg" data-aos="zoom-in" loading="lazy">
+    </a>
+    <a href="images/image8.jpg" data-lightbox="gallery">
+    <img src="images/image8.jpg" data-aos="zoom-in" loading="lazy">
+    </a>
+    <a href="images/image9.jpg" data-lightbox="gallery">
+    <img src="images/image9.jpg" data-aos="zoom-in" loading="lazy">
+    </a>
+    <a href="images/image10.jpg" data-lightbox="gallery">
+    <img src="images/image10.jpg" data-aos="zoom-in" loading="lazy">
+    </a>
+    <a href="images/image11.jpg" data-lightbox="gallery">        
+    <img src="images/image11.jpg" data-aos="zoom-in" loading="lazy">
+    </a>
+    <a href="images/image12.jpg" data-lightbox="gallery">
+    <img src="images/image12.jpg" data-aos="zoom-in" loading="lazy">
+    </a>
+    <a href="images/image13.jpg" data-lightbox="gallery">
+    <img src="images/image13.jpg" data-aos="zoom-in" loading="lazy">
+    </a>
+    <a href="images/image14.jpg" data-lightbox="gallery">
+    <img src="images/image14.jpg" data-aos="zoom-in" loading="lazy">
+    </a>
+    <a href="images/image15.jpg" data-lightbox="gallery">
+    <img src="images/image15.jpg" data-aos="zoom-in" loading="lazy">
+    </a>
+    <a href="images/image16.jpg" data-lightbox="gallery">
+    <img src="images/image16.jpg" data-aos="zoom-in" loading="lazy">
+    </a>
+    <a href="images/image17.jpg" data-lightbox="gallery">
+    <img src="images/image17.jpg" data-aos="zoom-in" loading="lazy">
+    </a>
+    <a href="images/img.1.jpg" data-lightbox="gallery">
+    <img src="images/img.1.jpg" data-aos="zoom-in" loading="lazy">
+    </a>
+    <a href="images/img.2.jpg" data-lightbox="gallery">
+    <img src="images/img.2.jpg" data-aos="zoom-in" loading="lazy">
+    </a>
+    <a href="images/imgage.jpg" data-lightbox="gallery">
+    <img src="images/imgage.jpg" data-aos="zoom-in" loading="lazy">
+    </a>
+  </div>
+</section>
+
+  </div>
+</section>
+
     </div>
 </section>
 
@@ -511,6 +573,8 @@ function deleteReview(index) {
 
 loadReviews();
 </script>
+<!-- Lightbox JS -->
+<script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox.min.js"></script>
 
 </body>
 </html>
